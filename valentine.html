@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: "Comic Sans MS", cursive;
+            background-color: #ffe6f0;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #ff4d88;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            margin: 20px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #yesBtn {
+            background-color: #ff66a3;
+            color: white;
+        }
+
+        #noBtn {
+            background-color: #cccccc;
+            position: relative;
+        }
+
+        #message {
+            display: none;
+            margin-top: 40px;
+            font-size: 24px;
+            color: #cc0066;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Will You Be My Valentine? 💕</h1>
+
+<button id="yesBtn" onclick="showMessage()">Yes askim 💖</button>
+<button id="noBtn" onmouseover="moveButton()">No? Esuuu? 😭</button>
+
+<div id="message">
+    💌 I really love you. I know we met online, and it's weird. But our relationship doesn't have to make sense to anyone except you and me. To be honest, when you first asked for my snap, I was actually scared, but now I feel like that was the best thing I did. I know it's hard. We are really far, and sometimes I overthink. Sometimes we might get mad at each other, or sometimes we might just be too tired to talk, and it's completely okay. I might not fall in love with you at first sight, but now I love you forever. I really want to meet you. I don't know how long it might take, but I believe that I might meet you someday, and till then, you will wait for me. ❤️🫠 
+</div>
+
+<script>
+function moveButton() {
+    let button = document.getElementById("noBtn");
+    button.style.position = "absolute";
+    button.style.top = Math.random() * window.innerHeight + "px";
+    button.style.left = Math.random() * window.innerWidth + "px";
+}
+
+function showMessage() {
+    document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
